@@ -1,0 +1,66 @@
+/* Importing the 'Inter' font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Basic body styling for centering the content */
+body {
+      text-align: center;
+    padding: 100px 5%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Apexcify\ 1.png');
+    background-size: cover;
+height:auto;
+        background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Styling for the content container */
+div {
+    background-color: #fff; /* Changed to white for a cleaner look */
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Styling for the main heading */
+h2 {
+    color: #041930; /* Updated to a deep blue color for a professional feel */
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Styling for the paragraphs of text */
+p {
+    font-size: clamp(1rem, 2vw, 1.1rem);
+    text-align: justify;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    div {
+        padding: 1.5rem;
+    }
+}

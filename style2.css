@@ -1,0 +1,131 @@
+/*
+ * This stylesheet is a complete redesign of the "About Us" page,
+ * focusing on a more elegant and professional aesthetic.
+ */
+
+/* --- General body styling --- */
+body {
+    /* Use the modern 'Inter' font with fallbacks */
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f7; /* Soft, light blue-gray background */
+    color: #4b5563; /* Darker charcoal for text for better readability */
+}
+
+/* --- Main content container with a refined shadow and layout --- */
+.about-content {
+   
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff;
+    /* More elegant shadow for a floating effect */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    /* Keep the floating effect from the hero image */
+    transform: translateY(-50px);
+    position: relative;
+    z-index: 10;
+}
+
+/* --- Hero Image Section --- */
+header {
+    width: 100%;
+    position: relative;
+    height: 500px;
+}
+
+.hero-image-container {
+   text-align: center;
+    padding: 100px 5%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Apexcify\ 1.png');
+    background-size: cover;
+height:auto;
+        background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* --- Typography and Headings --- */
+h2 {
+    color: #1e3a8a; /* A deep, professional blue for main headings */
+    border-bottom: 2px solid #d1d5db; /* Lighter gray line for separation */
+    padding-bottom: 10px;
+    margin-top: 40px;
+    font-size: 2.5em;
+    font-weight: 600; /* Use a semi-bold weight from the Inter font */
+}
+
+h3 {
+    color: #374151; /* A dark gray for subheadings */
+    font-weight: 400; /* Regular weight */
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.8; /* Increased line height for better readability */
+}
+
+/* --- List Styling for a cleaner look --- */
+ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background-color: #f8fafc; /* Very light background for list items */
+    margin-bottom: 12px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb; /* Subtle border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+}
+
+li:hover {
+    transform: translateY(-5px); /* Lift the item on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* Soft shadow on hover */
+}
+
+/* --- Responsive design for smaller screens --- */
+@media (max-width: 768px) {
+    .about-content {
+        padding: 20px;
+        transform: translateY(-30px);
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+
+    p {
+        font-size: 1em;
+
+    }
+    footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+}
